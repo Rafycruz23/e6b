@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+    <title>E6BCalculator</title>
+</head>
+<body>
+    <h1>E6B Calculator by Rafael Cruz</h1>
+    <div>
+        <h2>Fuel Burned</h2>
+    <form action="#" onsubmit="returnTotalFuel();return false">
+        <div>
+        <fieldset>
+            <legend>Calculate your fuel consumed</legend>
+            <input type="number" id="timeInMin" name="timeInMin"  class="flightTimeinMin" value="" placeholder="Flight Time in Minutes">
+            <input type="number" id="fuelPerHour" name="fuelPerHour" class="fuelPerHour" value="" placeholder="Fuel per Hour (GPH)">
+            <p id="totalFuel" name="totalFuel" class="totalFuel"></p>
+            <button onclick="returnTotalFuel()">Calculate</button>
+        </fieldset>
+        </div>
+    </form>
+    <form>
+        <h2>Flight Time for Distance & Ground Speed</h2>
+        <div>
+        <fieldset>
+            <input type="number" placeholder="Distance">
+            <input type="number" placeholder="Ground Speed">
+            <input type="number" placeholder="Total Flight Time" readonly>
+        </fieldset>
+        </div>
+    </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body{
+    /*font-family: 'Istok Web', sans-serif;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    border: 2px solid #131212;
+    margin: 10px;
+}
